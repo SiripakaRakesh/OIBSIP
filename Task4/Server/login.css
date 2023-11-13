@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body .container1{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body .container1 #form1{
+    padding: 30px 20px;
+    background-color:cadetblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+body .container1 #form1 .form-item1{
+    display: flex;
+    flex-direction: column;
+}
+body .container1 #form1 button{
+    border: none;
+}
+body p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
