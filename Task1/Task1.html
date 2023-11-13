@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Demo</title>
+    <link rel="stylesheet" href="Task1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-container">
+            <div class="results">
+                <p data-previous-line id="user-entry"></p>
+                <h2 id="output"></h2>
+            </div>
+            <div class="buttons">
+                <div class="button-top">
+                    <button id="open-bracket">(</button>
+                    <button id="closing-bracket">)</button>
+                    <button id="previous-ans">ans</button>
+                    <button data-delete id="DEL">DEL</button>
+                    <button data-clear id="AC" class="span-two">clear</button>
+                </div>
+                <div class="button-center">
+                    <div class="button-center-left">
+                        <button data-number id="A7">7</button>
+                        <button data-number id="A8">8</button>
+                        <button data-number id="A9">9</button>
+                        <button data-number id="A4">4</button>
+                        <button data-number id="A5">5</button>
+                        <button data-number id="A6">6</button>
+                        <button data-number id="A1">1</button>
+                        <button data-number id="A2">2</button>
+                        <button data-number id="A3">3</button>
+                    </div>
+                    <div class="button-center-right">
+                        <button data-operator id="mod">%</button>
+                        <button data-operator id="sqrt">√</button>
+                        <button data-operator id="multip">x</button>
+                        <button data-operator id="div">÷</button>
+                        <button data-operator id="addition">+</button>
+                        <button data-operator id="subt">-</button>
+                    </div>
+                </div>
+                <div class="button-bottom">
+                    <button data-number id="dot">.</button>
+                    <button data-number id="A0">0</button>
+                    <button><span>+</span><span>_</span></button>
+                    <button data-equal id="equals" class="span-two">Enter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Task1.js"></script>
+</html>

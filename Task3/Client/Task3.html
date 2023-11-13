@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Task3.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+            <div class="top">
+                <p>To-Do List Web App</p>
+            </div>
+            <div class="center">
+                <div class="center-left">
+                    <input type="text" id="taskInput" placeholder="Title" required autocomplete="on" title="Please fill this field">
+                    <textarea name="description" id="description" placeholder="Desciption" cols="30" rows="10" required autocomplete="on"></textarea>
+                    <button onclick="addTask()">Save</button>
+                </div>
+                <div class="center-right">
+                    <ul>
+                        <li>Title</li>
+                        <li>Desciption</li>
+                        <li>Delete</li>
+                    </ul>
+                    <div class="line"></div>
+                    <ul id="pendingTasks"></ul>
+                    <ul id="completedTasks"></ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="Task3.js"></script>
+</body>
+
+</html>
