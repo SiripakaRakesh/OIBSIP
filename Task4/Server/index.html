@@ -5,11 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <title>Login Authentication</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: honeydew;
+      }
+      body .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 20px;
+      }
+      body #form:hover {
+        box-shadow: 5px 5px 10px rgb(218, 197, 112);
+      }
+      body .container h1 {
+        color: cadetblue;
+      }
+      body .container #form {
+        padding: 35px 10px;
+        background-color: skyblue;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.3s ease-in-out;
+      }
+      body .container #form .form-item {
+        display: flex;
+        flex-direction: column;
+        
+      }
+      body .container #form .form-item input {
+        border: none;
+        border-radius: 2px;
+        height: 20px;
+      }
+      body .container #form .form-item input:focus{
+        outline: 1px solid orangered ;
+      }
+      body .container #form button {
+        width: 50%;
+        padding: 2px 7px;
+        border: none;
+        border-radius: 2px;
+        margin-top: 25px;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s ease-in-out;
+      }
+      body .container #form button:hover{
+        cursor: pointer;
+      }
+    </style>
   </head>
 
   <body>
     <div class="container">
-      <h1>Welcome to the Login Authentication System</h1>
+      <h1>Login Authentication System</h1>
       <form id="form" action="/register" method="post">
         <div class="form-item">
           <label for="username">Username:</label>
@@ -22,7 +81,7 @@
         <button type="submit">Register</button>
       </form>
       <p>
-        Already have an account?
+        Already have an account? &nbsp;
         <a href="http://localhost:5000/login">Login here</a>.
       </p>
     </div>

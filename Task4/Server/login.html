@@ -6,6 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="login.css">
+
+  <style>
+    body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:burlywood;
+}
+body .container1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+body .container1 #form1{
+    padding: 30px 20px;
+    background-color:cadetblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+body .container1 #form1 .form-item1{
+    display: flex;
+    flex-direction: column;
+}
+body .container1 #form1 .form-item1 input{
+  border-radius: 5px;
+  border: none;
+  height: 20px;
+}
+body .container1 #form1:hover{
+  box-shadow: 5px 5px 5px orange;
+}
+body .container1 #form1 button{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 50%;
+    border-radius: 3px;
+    transform: translate(-50%, -50%);
+    border: none;
+    transition: all .3s ease-in-out;
+}
+body .container1 #form1 button:hover{
+  cursor: pointer;
+}
+body p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  </style>
 </head>
 
 <body>
@@ -23,6 +78,6 @@
       <button type="submit">Login</button>
     </form>
   </div>
-  <p>Don't have an account? <a href="/">Register here</a>.</p>
+  <p>Don't have an account? &nbsp; <a href="/">Register here</a>.</p>
 </body>
 </html>
